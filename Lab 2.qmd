@@ -1,11 +1,13 @@
 ---
 title: "Lab 2"
+format: "pdf"
 ---
 
 ```{r}
 library(ggplot2)
 library(dplyr)
-
+```
+```{r}
 # Calculate the average highway mpg for each class of vehicle
 avg_mpg <- mpg %>%
   group_by(class) %>%
@@ -18,4 +20,6 @@ labs(title = "Average Highway MPG by Vehicle Class",
   x = "Average Highway MPG") +
 theme_minimal()
 ```
+
+
 
